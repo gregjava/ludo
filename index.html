@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ludo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎲 Ludo Game</h1>
+
+<div id="layout"><!-- Display the layout -->
+  <div id="boardWrap"><!-- Display the boardWrap -->
+    <div id="board"><!-- Display the board -->
+	  <div class="cell yard-red" data-r="0" data-c="0"></div>
+	  <div class="cell yard-red" data-r="0" data-c="1"></div>
+	  <div class="cell yard-red" data-r="0" data-c="2"></div>
+	  <div class="cell yard-red" data-r="0" data-c="3"></div>
+	  <div class="cell yard-red" data-r="0" data-c="4"></div>
+	  <div class="cell yard-red" data-r="0" data-c="5"></div>
+	  <div class="cell path" data-r="0" data-c="6" data-track="10"></div>
+	  <div class="cell path" data-r="0" data-c="7" data-track="11"></div>
+	  <div class="cell path" data-r="0" data-c="8" data-track="12"></div>
+	  <div class="cell yard-green" data-r="0" data-c="9"></div>
+	  <div class="cell yard-green" data-r="0" data-c="10"></div>
+	  <div class="cell yard-green" data-r="0" data-c="11"></div>
+	  <div class="cell yard-green" data-r="0" data-c="12"></div>
+	  <div class="cell yard-green" data-r="0" data-c="13"></div>
+	  <div class="cell yard-green" data-r="0" data-c="14"></div>
+	  <div class="cell yard-red" data-r="1" data-c="0"></div>
+	  <div class="cell yard-red" data-r="1" data-c="1"></div>
+	  <div class="cell yard-red" data-r="1" data-c="2"></div>
+	  <div class="cell yard-red" data-r="1" data-c="3"></div>
+	  <div class="cell yard-red" data-r="1" data-c="4"></div>
+	  <div class="cell yard-red" data-r="1" data-c="5"></div>
+	  <div class="cell path" data-r="1" data-c="6" data-track="9"></div>
+	  <div class="cell home-green" data-r="1" data-c="7"></div>
+	  <div class="cell path safe" data-r="1" data-c="8" data-track="13"></div>
+	  <div class="cell yard-green" data-r="1" data-c="9"></div>
+	  <div class="cell yard-green" data-r="1" data-c="10"></div>
+	  <div class="cell yard-green" data-r="1" data-c="11"></div>
+	  <div class="cell yard-green" data-r="1" data-c="12"></div>
+	  <div class="cell yard-green" data-r="1" data-c="13"></div>
+	  <div class="cell yard-green" data-r="1" data-c="14"></div>
+	  <div class="cell yard-red" data-r="2" data-c="0"></div>
+	  <div class="cell yard-red" data-r="2" data-c="1"></div>
+	  <div class="cell yard-red" data-r="2" data-c="2"></div>
+	  <div class="cell yard-red" data-r="2" data-c="3"></div>
+	  <div class="cell yard-red" data-r="2" data-c="4"></div>
+	  <div class="cell yard-red" data-r="2" data-c="5"></div>
+	  <div class="cell path safe" data-r="2" data-c="6" data-track="8"></div>
+	  <div class="cell home-green" data-r="2" data-c="7"></div>
+	  <div class="cell path" data-r="2" data-c="8" data-track="14"></div>
+	  <div class="cell yard-green" data-r="2" data-c="9"></div>
+	  <div class="cell yard-green" data-r="2" data-c="10"></div>
+	  <div class="cell yard-green" data-r="2" data-c="11"></div>
+	  <div class="cell yard-green" data-r="2" data-c="12"></div>
+	  <div class="cell yard-green" data-r="2" data-c="13"></div>
+	  <div class="cell yard-green" data-r="2" data-c="14"></div>
+	  <div class="cell yard-red" data-r="3" data-c="0"></div>
+	  <div class="cell yard-red" data-r="3" data-c="1"></div>
+	  <div class="cell yard-red" data-r="3" data-c="2"></div>
+	  <div class="cell yard-red" data-r="3" data-c="3"></div>
+	  <div class="cell yard-red" data-r="3" data-c="4"></div>
+	  <div class="cell yard-red" data-r="3" data-c="5"></div>
+	  <div class="cell path" data-r="3" data-c="6" data-track="7"></div>
+	  <div class="cell home-green" data-r="3" data-c="7"></div>
+	  <div class="cell path" data-r="3" data-c="8" data-track="15"></div>
+	  <div class="cell yard-green" data-r="3" data-c="9"></div>
+	  <div class="cell yard-green" data-r="3" data-c="10"></div>
+	  <div class="cell yard-green" data-r="3" data-c="11"></div>
+	  <div class="cell yard-green" data-r="3" data-c="12"></div>
+	  <div class="cell yard-green" data-r="3" data-c="13"></div>
+	  <div class="cell yard-green" data-r="3" data-c="14"></div>
+	  <div class="cell yard-red" data-r="4" data-c="0"></div>
+	  <div class="cell yard-red" data-r="4" data-c="1"></div>
+	  <div class="cell yard-red" data-r="4" data-c="2"></div>
+	  <div class="cell yard-red" data-r="4" data-c="3"></div>
+	  <div class="cell yard-red" data-r="4" data-c="4"></div>
+	  <div class="cell yard-red" data-r="4" data-c="5"></div>
+	  <div class="cell path" data-r="4" data-c="6" data-track="6"></div>
+	  <div class="cell home-green" data-r="4" data-c="7"></div>
+	  <div class="cell path" data-r="4" data-c="8" data-track="16"></div>
+	  <div class="cell yard-green" data-r="4" data-c="9"></div>
+	  <div class="cell yard-green" data-r="4" data-c="10"></div>
+	  <div class="cell yard-green" data-r="4" data-c="11"></div>
+	  <div class="cell yard-green" data-r="4" data-c="12"></div>
+	  <div class="cell yard-green" data-r="4" data-c="13"></div>
+	  <div class="cell yard-green" data-r="4" data-c="14"></div>
+	  <div class="cell yard-red" data-r="5" data-c="0"></div>
+	  <div class="cell yard-red" data-r="5" data-c="1"></div>
+	  <div class="cell yard-red" data-r="5" data-c="2"></div>
+	  <div class="cell yard-red" data-r="5" data-c="3"></div>
+	  <div class="cell yard-red" data-r="5" data-c="4"></div>
+	  <div class="cell yard-red" data-r="5" data-c="5"></div>
+	  <div class="cell path" data-r="5" data-c="6" data-track="5"></div>
+	  <div class="cell home-green" data-r="5" data-c="7"></div>
+	  <div class="cell path" data-r="5" data-c="8" data-track="17"></div>
+	  <div class="cell yard-green" data-r="5" data-c="9"></div>
+	  <div class="cell yard-green" data-r="5" data-c="10"></div>
+	  <div class="cell yard-green" data-r="5" data-c="11"></div>
+	  <div class="cell yard-green" data-r="5" data-c="12"></div>
+	  <div class="cell yard-green" data-r="5" data-c="13"></div>
+	  <div class="cell yard-green" data-r="5" data-c="14"></div>
+	  <div class="cell path" data-r="6" data-c="0" data-track="51"></div>
+	  <div class="cell path safe" data-r="6" data-c="1" data-track="0"></div>
+	  <div class="cell path" data-r="6" data-c="2" data-track="1"></div>
+	  <div class="cell path" data-r="6" data-c="3" data-track="2"></div>
+	  <div class="cell path" data-r="6" data-c="4" data-track="3"></div>
+	  <div class="cell path" data-r="6" data-c="5" data-track="4"></div>
+	  <div class="cell center" data-r="6" data-c="6"></div>
+	  <div class="cell home-green" data-r="6" data-c="7"></div>
+	  <div class="cell center" data-r="6" data-c="8"></div>
+	  <div class="cell path" data-r="6" data-c="9" data-track="18"></div>
+	  <div class="cell path" data-r="6" data-c="10" data-track="19"></div>
+	  <div class="cell path" data-r="6" data-c="11" data-track="20"></div>
+	  <div class="cell path safe" data-r="6" data-c="12" data-track="21"></div>
+	  <div class="cell path" data-r="6" data-c="13" data-track="22"></div>
+	  <div class="cell path" data-r="6" data-c="14" data-track="23"></div>
+	  <div class="cell path" data-r="7" data-c="0" data-track="50"></div>
+	  <div class="cell home-red" data-r="7" data-c="1"></div>
+	  <div class="cell home-red" data-r="7" data-c="2"></div>
+	  <div class="cell home-red" data-r="7" data-c="3"></div>
+	  <div class="cell home-red" data-r="7" data-c="4"></div>
+	  <div class="cell home-red" data-r="7" data-c="5"></div>
+	  <div class="cell home-red" data-r="7" data-c="6"></div>
+	  <div class="cell center" data-r="7" data-c="7"></div>
+	  <div class="cell home-yellow" data-r="7" data-c="8"></div>
+	  <div class="cell home-yellow" data-r="7" data-c="9"></div>
+	  <div class="cell home-yellow" data-r="7" data-c="10"></div>
+	  <div class="cell home-yellow" data-r="7" data-c="11"></div>
+	  <div class="cell home-yellow" data-r="7" data-c="12"></div>
+	  <div class="cell home-yellow" data-r="7" data-c="13"></div>
+	  <div class="cell path" data-r="7" data-c="14" data-track="24"></div>
+	  <div class="cell path" data-r="8" data-c="0" data-track="49"></div>
+	  <div class="cell path" data-r="8" data-c="1" data-track="48"></div>
+	  <div class="cell path safe" data-r="8" data-c="2" data-track="47"></div>
+	  <div class="cell path" data-r="8" data-c="3" data-track="46"></div>
+	  <div class="cell path" data-r="8" data-c="4" data-track="45"></div>
+	  <div class="cell path" data-r="8" data-c="5" data-track="44"></div>
+	  <div class="cell center" data-r="8" data-c="6"></div>
+	  <div class="cell home-blue" data-r="8" data-c="7"></div>
+	  <div class="cell center" data-r="8" data-c="8"></div>
+	  <div class="cell path" data-r="8" data-c="9" data-track="30"></div>
+	  <div class="cell path" data-r="8" data-c="10" data-track="29"></div>
+	  <div class="cell path" data-r="8" data-c="11" data-track="28"></div>
+	  <div class="cell path" data-r="8" data-c="12" data-track="27"></div>
+	  <div class="cell path safe" data-r="8" data-c="13" data-track="26"></div>
+	  <div class="cell path" data-r="8" data-c="14" data-track="25"></div>
+	  <div class="cell yard-blue" data-r="9" data-c="0"></div>
+	  <div class="cell yard-blue" data-r="9" data-c="1"></div>
+	  <div class="cell yard-blue" data-r="9" data-c="2"></div>
+	  <div class="cell yard-blue" data-r="9" data-c="3"></div>
+	  <div class="cell yard-blue" data-r="9" data-c="4"></div>
+	  <div class="cell yard-blue" data-r="9" data-c="5"></div>
+	  <div class="cell path" data-r="9" data-c="6" data-track="43"></div>
+	  <div class="cell home-blue" data-r="9" data-c="7"></div>
+	  <div class="cell path" data-r="9" data-c="8" data-track="31"></div>
+	  <div class="cell yard-yellow" data-r="9" data-c="9"></div>
+	  <div class="cell yard-yellow" data-r="9" data-c="10"></div>
+	  <div class="cell yard-yellow" data-r="9" data-c="11"></div>
+	  <div class="cell yard-yellow" data-r="9" data-c="12"></div>
+	  <div class="cell yard-yellow" data-r="9" data-c="13"></div>
+	  <div class="cell yard-yellow" data-r="9" data-c="14"></div>
+	  <div class="cell yard-blue" data-r="10" data-c="0"></div>
+	  <div class="cell yard-blue" data-r="10" data-c="1"></div>
+	  <div class="cell yard-blue" data-r="10" data-c="2"></div>
+	  <div class="cell yard-blue" data-r="10" data-c="3"></div>
+	  <div class="cell yard-blue" data-r="10" data-c="4"></div>
+	  <div class="cell yard-blue" data-r="10" data-c="5"></div>
+	  <div class="cell path" data-r="10" data-c="6" data-track="42"></div>
+	  <div class="cell home-blue" data-r="10" data-c="7"></div>
+	  <div class="cell path" data-r="10" data-c="8" data-track="32"></div>
+	  <div class="cell yard-yellow" data-r="10" data-c="9"></div>
+	  <div class="cell yard-yellow" data-r="10" data-c="10"></div>
+	  <div class="cell yard-yellow" data-r="10" data-c="11"></div>
+	  <div class="cell yard-yellow" data-r="10" data-c="12"></div>
+	  <div class="cell yard-yellow" data-r="10" data-c="13"></div>
+	  <div class="cell yard-yellow" data-r="10" data-c="14"></div>
+	  <div class="cell yard-blue" data-r="11" data-c="0"></div>
+	  <div class="cell yard-blue" data-r="11" data-c="1"></div>
+	  <div class="cell yard-blue" data-r="11" data-c="2"></div>
+	  <div class="cell yard-blue" data-r="11" data-c="3"></div>
+	  <div class="cell yard-blue" data-r="11" data-c="4"></div>
+	  <div class="cell yard-blue" data-r="11" data-c="5"></div>
+	  <div class="cell path" data-r="11" data-c="6" data-track="41"></div>
+	  <div class="cell home-blue" data-r="11" data-c="7"></div>
+	  <div class="cell path" data-r="11" data-c="8" data-track="33"></div>
+	  <div class="cell yard-yellow" data-r="11" data-c="9"></div>
+	  <div class="cell yard-yellow" data-r="11" data-c="10"></div>
+	  <div class="cell yard-yellow" data-r="11" data-c="11"></div>
+	  <div class="cell yard-yellow" data-r="11" data-c="12"></div>
+	  <div class="cell yard-yellow" data-r="11" data-c="13"></div>
+	  <div class="cell yard-yellow" data-r="11" data-c="14"></div>
+	  <div class="cell yard-blue" data-r="12" data-c="0"></div>
+	  <div class="cell yard-blue" data-r="12" data-c="1"></div>
+	  <div class="cell yard-blue" data-r="12" data-c="2"></div>
+	  <div class="cell yard-blue" data-r="12" data-c="3"></div>
+	  <div class="cell yard-blue" data-r="12" data-c="4"></div>
+	  <div class="cell yard-blue" data-r="12" data-c="5"></div>
+	  <div class="cell path" data-r="12" data-c="6" data-track="40"></div>
+	  <div class="cell home-blue" data-r="12" data-c="7"></div>
+	  <div class="cell path safe" data-r="12" data-c="8" data-track="34"></div>
+	  <div class="cell yard-yellow" data-r="12" data-c="9"></div>
+	  <div class="cell yard-yellow" data-r="12" data-c="10"></div>
+	  <div class="cell yard-yellow" data-r="12" data-c="11"></div>
+	  <div class="cell yard-yellow" data-r="12" data-c="12"></div>
+	  <div class="cell yard-yellow" data-r="12" data-c="13"></div>
+	  <div class="cell yard-yellow" data-r="12" data-c="14"></div>
+	  <div class="cell yard-blue" data-r="13" data-c="0"></div>
+	  <div class="cell yard-blue" data-r="13" data-c="1"></div>
+	  <div class="cell yard-blue" data-r="13" data-c="2"></div>
+	  <div class="cell yard-blue" data-r="13" data-c="3"></div>
+	  <div class="cell yard-blue" data-r="13" data-c="4"></div>
+	  <div class="cell yard-blue" data-r="13" data-c="5"></div>
+	  <div class="cell path safe" data-r="13" data-c="6" data-track="39"></div>
+	  <div class="cell home-blue" data-r="13" data-c="7"></div>
+	  <div class="cell path" data-r="13" data-c="8" data-track="35"></div>
+	  <div class="cell yard-yellow" data-r="13" data-c="9"></div>
+	  <div class="cell yard-yellow" data-r="13" data-c="10"></div>
+	  <div class="cell yard-yellow" data-r="13" data-c="11"></div>
+	  <div class="cell yard-yellow" data-r="13" data-c="12"></div>
+	  <div class="cell yard-yellow" data-r="13" data-c="13"></div>
+	  <div class="cell yard-yellow" data-r="13" data-c="14"></div>
+	  <div class="cell yard-blue" data-r="14" data-c="0"></div>
+	  <div class="cell yard-blue" data-r="14" data-c="1"></div>
+	  <div class="cell yard-blue" data-r="14" data-c="2"></div>
+	  <div class="cell yard-blue" data-r="14" data-c="3"></div>
+	  <div class="cell yard-blue" data-r="14" data-c="4"></div>
+	  <div class="cell yard-blue" data-r="14" data-c="5"></div>
+	  <div class="cell path" data-r="14" data-c="6" data-track="38"></div>
+	  <div class="cell path" data-r="14" data-c="7" data-track="37"></div>
+	  <div class="cell path" data-r="14" data-c="8" data-track="36"></div>
+	  <div class="cell yard-yellow" data-r="14" data-c="9"></div>
+	  <div class="cell yard-yellow" data-r="14" data-c="10"></div>
+	  <div class="cell yard-yellow" data-r="14" data-c="11"></div>
+	  <div class="cell yard-yellow" data-r="14" data-c="12"></div>
+	  <div class="cell yard-yellow" data-r="14" data-c="13"></div>
+	  <div class="cell yard-yellow" data-r="14" data-c="14"></div>
+    </div><!-- Close the board -->
+
+    <div id="tokenLayer"><!-- Display the seeds/tokens -->
+      <div class="token red r2 c2" data-color="red" data-index="0">1</div>
+      <div class="token red r2 c5" data-color="red" data-index="1">2</div>
+      <div class="token red r5 c5" data-color="red" data-index="2">3</div>
+      <div class="token red r5 c2" data-color="red" data-index="3">4</div>
+
+      <div class="token green r2 c11" data-color="green" data-index="0">1</div>
+      <div class="token green r2 c14" data-color="green" data-index="1">2</div>
+      <div class="token green r5 c14" data-color="green" data-index="2">3</div>
+      <div class="token green r5 c11" data-color="green" data-index="3">4</div>
+
+      <div class="token yellow r11 c11" data-color="yellow" data-index="0">1</div>
+      <div class="token yellow r11 c14" data-color="yellow" data-index="1">2</div>
+      <div class="token yellow r14 c14" data-color="yellow" data-index="2">3</div>
+      <div class="token yellow r14 c11" data-color="yellow" data-index="3">4</div>
+
+      <div class="token blue r11 c2" data-color="blue" data-index="0">1</div>
+      <div class="token blue r11 c5" data-color="blue" data-index="1">2</div>
+      <div class="token blue r14 c5" data-color="blue" data-index="2">3</div>
+      <div class="token blue r14 c2" data-color="blue" data-index="3">4</div>
+    </div><!-- Close the seeds/tokens -->
+	<!-- Display the home/yard names -->
+    <div class="yard-block red-block"><span class="yard-label">red</span></div>
+    <div class="yard-block green-block"><span class="yard-label">green</span></div>
+    <div class="yard-block yellow-block"><span class="yard-label">yellow</span></div>
+    <div class="yard-block blue-block"><span class="yard-label">blue</span></div>
+  </div><!-- Close the boardWrap -->
+  
+  <div id="side"><!-- Display the side panel -->
+    <div id="status">
+      <div id="turnLabel" data-turn="red">Red's turn</div>
+      <div id="dice">-</div>
+      <button id="rollBtn">Roll Dice</button>
+      <div id="message"></div>
+      <button id="newGameBtn">New Game</button>
+    </div>
+    <div class="panel" data-color="red">
+      <h3><span class="swatch red"></span>Red</h3>
+      <div class="tokRow" id="tokens-red">
+        <button class="tokBtn" data-color="red" data-index="0">#1 Seed</button>
+        <button class="tokBtn" data-color="red" data-index="1">#2 Seed</button>
+        <button class="tokBtn" data-color="red" data-index="2">#3 Seed</button>
+        <button class="tokBtn" data-color="red" data-index="3">#4 Seed</button>
+      </div>
+    </div>
+    <div class="panel" data-color="green">
+      <h3><span class="swatch green"></span>Green</h3>
+      <div class="tokRow" id="tokens-green">
+        <button class="tokBtn" data-color="green" data-index="0">#1 Seed</button>
+        <button class="tokBtn" data-color="green" data-index="1">#2 Seed</button>
+        <button class="tokBtn" data-color="green" data-index="2">#3 Seed</button>
+        <button class="tokBtn" data-color="green" data-index="3">#4 Seed</button>
+      </div>
+    </div>
+    <div class="panel" data-color="yellow">
+      <h3><span class="swatch yellow"></span>Yellow</h3>
+      <div class="tokRow" id="tokens-yellow">
+        <button class="tokBtn" data-color="yellow" data-index="0">#1 Seed</button>
+        <button class="tokBtn" data-color="yellow" data-index="1">#2 Seed</button>
+        <button class="tokBtn" data-color="yellow" data-index="2">#3 Seed</button>
+        <button class="tokBtn" data-color="yellow" data-index="3">#4 Seed</button>
+      </div>
+    </div>
+    <div class="panel" data-color="blue">
+      <h3><span class="swatch blue"></span>Blue</h3>
+      <div class="tokRow" id="tokens-blue">
+        <button class="tokBtn" data-color="blue" data-index="0">#1 Seed</button>
+        <button class="tokBtn" data-color="blue" data-index="1">#2 Seed</button>
+        <button class="tokBtn" data-color="blue" data-index="2">#3 Seed</button>
+        <button class="tokBtn" data-color="blue" data-index="3">#4 Seed</button>
+      </div>
+    </div>
+  </div><!-- Close the side panel -->
+</div><!-- Close the layout -->
+
+<script src="script.js"></script>
+</body>
+</html>
