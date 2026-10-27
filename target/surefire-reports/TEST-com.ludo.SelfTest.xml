@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ludo.SelfTest" time="0.006" tests="0" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="26"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\GREG-PC\Documents\NetBeansProjects\ludo-fx\target\test-classes;C:\Users\GREG-PC\Documents\NetBeansProjects\ludo-fx\target\classes;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Africa/Lagos"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="26"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin"/>
+    <property name="sun.java.command" value="C:\Users\GREG-PC\AppData\Local\Temp\surefire16305651600818011273\surefirebooter-20261027212018361_3.jar C:\Users\GREG-PC\AppData\Local\Temp\surefire16305651600818011273 2026-10-27T21-20-16_651-jvmRun1 surefire-20261027212018361_1tmp surefire_0-20261027212018361_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\GREG-PC\Documents\NetBeansProjects\ludo-fx\target\test-classes;C:\Users\GREG-PC\Documents\NetBeansProjects\ludo-fx\target\classes;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\GREG-PC\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\GREG-PC"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Apache NetBeans\jdk"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\GREG-PC\Documents\NetBeansProjects\ludo-fx"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\GREG-PC\AppData\Local\Temp\surefire16305651600818011273\surefirebooter-20261027212018361_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="26.0.1+8"/>
+    <property name="user.name" value="GREG-PC"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-26.0.1+8"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\Apache NetBeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\GREG-PC\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\GREG-PC\AppData\Local\Temp\"/>
+    <property name="java.version" value="26.0.1"/>
+    <property name="user.dir" value="C:\Users\GREG-PC\Documents\NetBeansProjects\ludo-fx"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-21.0.10\bin;C:\Users\GREG-PC\AppData\Local\Android\Sdk\platform-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\ffmpeg\bin;C:\Users\GREG-PC\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\GREG-PC\AppData\Local\Programs\Python\Python312\;C:\Users\GREG-PC\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\GREG-PC\AppData\Local\Programs\Python\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-21.0.10\bin;C:\Users\GREG-PC\AppData\Local\Android\Sdk\platform-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\WiX Toolset v3.11\bin;C:\apache-ant-1.10.17\bin;C:\apache-ant-1.10.17\bin;C:\Program Files\Java\jdk-21.0.10\bin;C:\Users\GREG-PC\AppData\Local\Programs\Ollama;C:\Users\GREG-PC\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Apache NetBeans\bin\;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="26.0.1+8"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="70.0"/>
+  </properties>
+</testsuite>
