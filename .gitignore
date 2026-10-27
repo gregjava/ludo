@@ -1,1 +1,24 @@
+# Build output
 target/
+out/
+test-out/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# IDE / OS noise
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
